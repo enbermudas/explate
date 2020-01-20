@@ -4,14 +4,19 @@ node_js:
   - stable
 branches:
   only:
-  - master
+    - master
 cache:
   directories:
-  - node_modules
+    - node_modules
 before_install:
-- yarn upgrade
+  - yarn upgrade
 install:
-- yarn
+  - yarn
 script:
-- yarn test
-- yarn coveralls
+  - yarn test
+  - yarn coveralls
+env:
+  - NODE_ENV='development'
+  - HOST='0.0.0.0'
+  - PORT=3000
+  - LOG_LEVEL='debug'
