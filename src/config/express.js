@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const methodOverride = require('method-override');
 const morgan = require('morgan');
 const { NODE_ENV } = require('./env');
+const routes = require('../router');
 
 const app = express();
 const morganFormat = NODE_ENV !== 'production' ? 'dev' : 'combined';
@@ -27,5 +28,6 @@ app.use(compression());
 app.use(cors());
 app.use(helmet());
 app.use(methodOverride('X-HTTP-Method-Override'));
+app.use('/api', routes);
 
 module.exports = app;
