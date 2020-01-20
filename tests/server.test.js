@@ -1,5 +1,7 @@
 const request = require('supertest');
-const server = require('../src/index');
+const app = require('../src/config/express');
+
+const server = app.listen(3000);
 
 afterAll(() => server.close());
 
