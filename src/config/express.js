@@ -8,7 +8,9 @@ const { NODE_ENV } = require('./env');
 const routes = require('../router');
 
 const app = express();
-const morganFormat = NODE_ENV !== 'production' ? 'dev' : 'combined';
+
+let morganFormat = 'dev';
+if (NODE_ENV === 'production') morganFormat = 'combined';
 
 app.use(
   morgan(morganFormat, {
