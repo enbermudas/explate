@@ -15,15 +15,15 @@ if (NODE_ENV === 'production') morganFormat = 'combined';
 app.use(
   morgan(morganFormat, {
     skip: (req, res) => res.statusCode < 400,
-    stream: process.stderr
-  })
+    stream: process.stderr,
+  }),
 );
 
 app.use(
   morgan(morganFormat, {
     skip: (req, res) => res.statusCode >= 400,
-    stream: process.stdout
-  })
+    stream: process.stdout,
+  }),
 );
 
 app.use(compression());

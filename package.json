@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "lint": "eslint 'src/**/*.js'",
-    "lint:fix": "yarn run lint --fix",
+    "lint": "eslint 'src/**/*.js' --fix",
     "test": "jest",
     "coveralls": "yarn test --coverage --coverageReporters=text-lcov | coveralls"
   },
@@ -33,15 +32,19 @@
     "coveralls": "^3.0.9",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.0.10",
     "jest": "^24.9.0",
     "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
     "supertest": "^4.0.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint:fix",
+      "pre-commit": "yarn lint",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   }
