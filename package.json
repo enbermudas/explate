@@ -9,8 +9,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "lint": "eslint 'src/**/*.js' --fix",
-    "test": "jest",
-    "coveralls": "yarn test --coverage --coverageReporters=text-lcov | coveralls"
+    "test": "jest --config jest.config.js"
   },
   "engines": {
     "node": ">= 8.0.0",
