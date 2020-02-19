@@ -1,7 +1,9 @@
 # explate
 
-[![Build Status](https://travis-ci.com/enbermudas/explate.svg?branch=master)](https://travis-ci.com/enbermudas/explate)
-[![Coverage Status](https://coveralls.io/repos/github/enbermudas/explate/badge.svg?branch=master)](https://coveralls.io/github/enbermudas/explate?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![enbermudas](https://circleci.com/gh/enbermudas/explate.svg?style=shield)](https://circleci.com/gh/enbermudez96/explate)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3cc5a12bd6a54958826a109dcc14b42a)](https://www.codacy.com/manual/enbermudez96/explate?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=enbermudas/explate&amp;utm_campaign=Badge_Grade)
+[![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
 
 Nothing but my very own express boilerplate
 
