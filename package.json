@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Nothing but my very own express boilerplate",
   "main": "src/index.js",
-  "repository": "https://github.com/enbermudas/fail-express.git",
-  "author": "Enrique Bermúdez <enbermudev@gmail.com>",
+  "repository": "https://github.com/enbermudas/explate.git",
+  "author": "Enrique Bermúdez <enbermudez96@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/index.js",
